@@ -43,6 +43,13 @@
 
     <build>
         <plugins>
+                 <!-- Jetty server for running web app -->
+<plugin>
+    <groupId>org.eclipse.jetty</groupId>
+    <artifactId>jetty-maven-plugin</artifactId>
+    <version>11.0.15</version>
+</plugin>
+
             <!-- Plugin to run Java main class -->
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
