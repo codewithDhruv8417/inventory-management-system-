@@ -49,7 +49,8 @@ public class AddProductServlet extends HttpServlet {
             response.sendRedirect("products");
 
         } catch (Exception e) {
-            throw new ServletException("Error adding product", e);
+           response.sendRedirect("error.jsp");
+
         }
     }
 }
