@@ -15,6 +15,15 @@ A Java-based desktop inventory management system (GUI) that helps small business
 - MySQL
 - JDBC (PreparedStatement)
 - JUnit for unit tests
+- ## Review 2 Enhancements
+
+- Servlet-based product listing using JSP
+- Add product functionality using POST requests
+- Client-side and server-side validation
+- Low-stock product highlighting
+- Error handling using custom error page
+- Integrated DAO, Service, and Servlet layers
+
 
 ## Repo Structure
 inventory-management/
