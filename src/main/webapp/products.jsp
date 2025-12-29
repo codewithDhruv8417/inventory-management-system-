@@ -44,13 +44,14 @@
         if (products != null) {
             for (Product p : products) {
     %>
-    <tr>
-        <td><%= p.getProductId() %></td>
-        <td><%= p.getSku() %></td>
-        <td><%= p.getName() %></td>
-        <td><%= p.getQuantity() %></td>
-        <td><%= p.getReorderLevel() %></td>
-    </tr>
+  <tr style="<%= (p.getQuantity() <= p.getReorderLevel()) ? "background-color:#ffcccc" : "" %>">
+    <td><%= p.getProductId() %></td>
+    <td><%= p.getSku() %></td>
+    <td><%= p.getName() %></td>
+    <td><%= p.getQuantity() %></td>
+    <td><%= p.getReorderLevel() %></td>
+</tr>
+
     <%
             }
         }
